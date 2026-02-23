@@ -1,0 +1,84 @@
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: #f4f4f4; 
+    margin: 0; 
+    padding: 20px; 
+    text-align: center; 
+}
+.container { 
+    width: 85%; 
+    margin: auto; 
+    background: white; 
+    padding: 20px; 
+    border: 1px solid #ddd;
+    min-height: 85vh;
+}
+.hidden { 
+    display: none; 
+}
+h1 { 
+    color: #1a73e8; 
+    font-size: 40px; 
+}
+.slogan { 
+    color: #555; 
+    font-style: italic; 
+    margin-bottom: 20px; 
+}
+.auth-box { 
+    width: 320px; 
+    margin: 40px auto; 
+    padding: 25px; 
+    border: 2px solid #1a73e8; 
+    border-radius: 8px; 
+}
+input { 
+    width: 90%; 
+    padding: 10px; 
+    margin: 10px 0; 
+}
+.btn-primary { 
+    width: 95%; 
+    padding: 12px; 
+    background-color: #1a73e8; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    font-weight: bold;
+}
+.btn-logout { 
+    background-color: #d93025; 
+    color: white; 
+    padding: 12px 25px; 
+    border: none; 
+    cursor: pointer; 
+    margin-top: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.book-card { 
+    display: inline-block; 
+    width: 280px; 
+    margin: 15px; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    vertical-align: top; 
+    background: #fff;
+    text-align: center;
+}
+.book-details { 
+    display: none; 
+    background: #f9f9f9; 
+    padding: 10px; 
+    text-align: left; 
+    font-size: 14px; 
+    border: 1px dashed #bbb;
+    margin: 10px 0;
+}
+.status-badge { 
+    display: block; 
+    margin: 10px 0; 
+    font-weight: bold; 
+}
+.status-available { color: green; }
+.status-borrowed { color: red; }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA Library System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="auth-page">
+            <h1>📚 Knowledge Hub</h1>
+            <p class="slogan">"Your Gateway to Programming Excellence"</p>
+            <div class="auth-box">
+                <h2>User Access</h2>
+                <p id="error-msg" style="color:red; font-size:14px;"></p>
+                <input type="text" id="user" placeholder="Enter Username">
+                <input type="password" id="pass" placeholder="Enter Password">
+                <button class="btn-primary" onclick="handleLogin()">LOGIN / REGISTER</button>
+            </div>
+        </div>
+
+        <div id="dashboard" class="hidden">
+            <h2 id="user-welcome">Welcome!</h2>
+            <p class="slogan">"Welcome to our website! Start your learning journey today."</p>
+            <div id="book-list">
+                <div class="book-card" onclick="showDetails('detJava')">
+                    <h3>Java Programming</h3>
+                    <div id="detJava" class="book-details"><b>Author:</b> James Gosling<br><b>Release:</b> 1995</div>
+                    <div id="badge-Java" class="status-badge status-available">Available</div>
+                    <button class="btn-primary" onclick="borrowBook(event, 'Java')">Borrow Now</button>
+                </div>
+                <div class="book-card" onclick="showDetails('detPython')">
+                    <h3>Python Language</h3>
+                    <div id="detPython" class="book-details"><b>Author:</b> Guido van Rossum<br><b>Release:</b> 1991</div>
+                    <div id="badge-Python" class="status-badge status-available">Available</div>
+                    <button class="btn-primary" onclick="borrowBook(event, 'Python')">Borrow Now</button>
+                </div>
+                <div class="book-card" onclick="showDetails('detCpp')">
+                    <h3>C++ Essentials</h3>
+                    <div id="detCpp" class="book-details"><b>Author:</b> Bjarne Stroustrup<br><b>Release:</b> 1985</div>
+                    <div id="badge-Cpp" class="status-badge status-available">Available</div>
+                    <button class="btn-primary" onclick="borrowBook(event, 'Cpp')">Borrow Now</button>
+                </div>
+                <div class="book-card" onclick="showDetails('detHtml')">
+                    <h3>HTML & CSS Guide</h3>
+                    <div id="detHtml" class="book-details"><b>Author:</b> Tim Berners-Lee<br><b>Release:</b> 1993</div>
+                    <div id="badge-Html" class="status-badge status-available">Available</div>
+                    <button class="btn-primary" onclick="borrowBook(event, 'Html')">Borrow Now</button>
+                </div>
+                <div class="book-card" onclick="showDetails('detJs')">
+                    <h3>JavaScript Master</h3>
+                    <div id="detJs" class="book-details"><b>Author:</b> Brendan Eich<br><b>Release:</b> 1995</div>
+                    <div id="badge-Js" class="status-badge status-available">Available</div>
+                    <button class="btn-primary" onclick="borrowBook(event, 'Js')">Borrow Now</button>
+                </div>
+                <div class="book-card" onclick="showDetails('detC')">
+                    <h3>C Programming</h3>
+                    <div id="detC" class="book-details"><b>Author:</b> Dennis Ritchie<br><b>Release:</b> 1972</div>
+                    <div id="badge-C" class="status-badge status-available">Available</div>
+                    <button class="btn-primary" onclick="borrowBook(event, 'C')">Borrow Now</button>
+                </div>
+            </div>
+            <button class="btn-logout" onclick="logout()">LOGOUT</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
